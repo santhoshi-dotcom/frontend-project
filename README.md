@@ -30,17 +30,14 @@
 
 ## 🚀 How to Run the Project
 
-1️⃣ Download or Clone the Repository
+1. Download or Clone the Repository
 Copy code
 
- git clone https://github.com/santhoshi-dotcom/Frontend-project.git
-2️⃣ Open the Project Folder
-Copy code
- cd Frontend-project
-3️⃣ Run the Project
-Simply open:
-Copy code
- intro.html in your browser.
+ - git clone https://github.com/santhoshi-dotcom/Frontend-project.git
+2️. Open the Project Folder
+ - Frontend-project
+3️. Run the Project.
+ - intro.html in your browser.
    
 ## 📂 Project Structure
 
