@@ -2,19 +2,19 @@
 # 🍽 RePlate – Zero Waste Food Donation System
  🔹RePlate is a web-based platform designed to reduce food waste and help feed people in need. The system encourages individuals, restaurants, and organizations to donate surplus food instead of throwing it away.
  🔹The goal of this project is to connect food donors with people who need food, helping reduce hunger while minimizing food waste.
-# 📖 Introduction
-🔹Food waste is a serious global problem while millions of people still suffer from hunger every day.
+## 📖 Introduction
+- Food waste is a serious global problem while millions of people still suffer from hunger every day.
 🔹RePlate aims to bridge this gap by creating a platform where surplus food can be donated and distributed to those who need it.
  The platform spreads awareness about responsible food usage with the message:
 "Don't waste food when someone is hungry."
-# 📌 Project Description
+## 📌 Project Description
    🎯 The Zero Waste Food Donation System allows users to:
   🔹Donate surplus food.
   🔹Raise awareness about food waste.
   🔹Support people facing hunger.
   🔹Encourage responsible food management.
   🔹The website begins with an interactive intro page that shows the reality of food waste and hunger before allowing users to enter the main platform.
-# ✨ Features
+## ✨ Features
 🔹 Intro Awareness Page – Shows message about food waste.
 🔹 Scratch-style introduction concept (interactive idea).
 🔹 Motivational quotes about food donation.
