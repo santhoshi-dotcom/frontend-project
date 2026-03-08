@@ -1,0 +1,129 @@
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:15px 50px;
+background:rgba(0,0,0,0.7);
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+font-size:40px;
+font-weight:bold;
+color:white;
+}
+
+.logo span{
+color:#4CAF50;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:18px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#4CAF50;
+}
+
+/* Hero Section */
+
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') no-repeat center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero-content{
+background:rgba(0,0,0,0.6);
+padding:40px;
+border-radius:10px;
+}
+
+.hero h1{
+font-size:38px;
+margin-bottom:20px;
+}
+
+.btn{
+padding:12px 30px;
+background:#4CAF50;
+color:white;
+border:none;
+border-radius:25px;
+font-size:18px;
+cursor:pointer;
+}
+
+.btn:hover{
+background:#388E3C;
+}
+
+/* Donation Form */
+
+#donationForm{
+display:none;
+padding:50px 20px;
+background:#f4f4f4;
+}
+
+form{
+max-width:600px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+form input, form select, form textarea{
+width:100%;
+padding:10px;
+margin-bottom:15px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+form button{
+width:100%;
+padding:12px;
+background:#4CAF50;
+color:white;
+border:none;
+border-radius:25px;
+cursor:pointer;
+}
+
+/* Floating emoji */
+
+.emoji{
+position:fixed;
+bottom:-50px;
+font-size:25px;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+100%{transform:translateY(-800px)}
+}

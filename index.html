@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RePlate - Zero Waste Food Donation</title>
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+<!-- Navbar -->
+
+<nav>
+<div class="logo">Re<span>Plate</span></div>
+
+<div>
+<a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+<a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
+<a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+<a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+</div>
+</nav>
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<button class="btn"
+onmouseover="showQuote()"
+onmouseout="hideQuote()"
+onclick="showForm()">
+Donate Food
+</button>
+
+<h1 id="donateQuote" style="display:none; margin-top:20px;">
+Don't Waste Food,Someone Is Sleeping On An Empty Stomach ❤️
+</h1>
+
+</div>
+
+</section>
+
+<!-- Donation Form -->
+
+<section id="donationForm">
+
+<form onsubmit="saveDonation(event)">
+
+<h2>Food Donation Form</h2>
+
+<input type="text" placeholder="Donator Name" required>
+
+<input type="number" id="mobile" placeholder="Phone Number" onblur="checkNumber()" onfocus="highlight(this)">
+
+<p id="msg"></p>
+
+<input type="text" placeholder="Address / Contact Details" required>
+
+<input type="text" placeholder="Food Name" required>
+
+<select id="product" onchange="selectProduct()" required>
+
+<option value="">Select Food Type</option>
+
+<option value="Vegetarian">Vegetarian</option>
+
+<option value="Non-Vegetarian">Non-Vegetarian</option>
+
+</select>
+
+<p id="resu"></p>
+
+<input type="number" placeholder="Quantity (kg / plates)" required>
+
+<select required>
+
+<option value="">Food Condition</option>
+
+<option>Raw</option>
+
+<option>Packed</option>
+
+<option>Cooked</option>
+
+</select>
+
+<textarea placeholder="Additional Details"></textarea>
+
+<button type="submit">Submit Donation</button>
+
+</form>
+
+</section>
+
+<script>
+    function highlight(field){
+     field.style.backgroundColor="lightgreen";
+    }
+
+/* Quote */
+
+function showQuote(){
+document.getElementById("donateQuote").style.display="block";
+}
+
+function hideQuote(){
+document.getElementById("donateQuote").style.display="none";
+}
+
+/* Show Form */
+
+function showForm(){
+document.getElementById("donationForm").style.display="block";
+document.getElementById("donationForm").scrollIntoView({behavior:"smooth"});
+}
+
+/* Phone Validation */
+
+function checkNumber(){
+
+let num=document.getElementById("mobile").value;
+let msg=document.getElementById("msg");
+
+if(num.length===10){
+msg.innerHTML="✔ Correct Number";
+msg.style.color="green";
+}else{
+msg.innerHTML="Enter 10 digit number";
+msg.style.color="red";
+}
+
+}
+
+/* Food Type */
+
+function selectProduct(){
+
+let pro=document.getElementById("product").value;
+let res=document.getElementById("resu");
+
+if(pro==="Vegetarian"){
+res.textContent="🥦 Vegetarian Food Selected";
+}
+
+else if(pro==="Non-Vegetarian"){
+res.textContent="🍗 Non-Vegetarian Food Selected";
+}
+
+}
+
+/* Save Donation */
+
+function saveDonation(event){
+
+event.preventDefault();
+
+const formData={
+
+Name:document.querySelector('input[placeholder="Donator Name"]').value,
+Phone:document.querySelector('input[placeholder="Phone Number"]').value,
+Food:document.querySelector('input[placeholder="Food Name"]').value,
+Quantity:document.querySelector('input[placeholder="Quantity (kg / plates)"]').value
+
+};
+
+let donations=JSON.parse(localStorage.getItem("donations")) || [];
+
+donations.push(formData);
+
+localStorage.setItem("donations",JSON.stringify(donations));
+
+alert("Donation Submitted Successfully ❤️");
+
+document.querySelector("form").reset();
+
+}
+
+/* Floating Emojis */
+
+const foods=["🍎","🍕","🍔","🥗","🍞","🍲","🥙" ,"🥘","🍛","🥗","🥕","🥝","🥫"];
+
+setInterval(()=>{
+
+let emoji=document.createElement("div");
+
+emoji.className="emoji";
+
+emoji.innerHTML=foods[Math.floor(Math.random()*foods.length)];
+
+emoji.style.left=Math.random()*100+"%";
+
+document.body.appendChild(emoji);
+
+setTimeout(()=>emoji.remove(),6000);
+
+},1000);
+
+</script>
+
+</body>
+</html>

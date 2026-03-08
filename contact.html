@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - RePlate</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+nav{
+background:#4CAF50;
+padding:20px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 20px;
+font-size:18px;
+font-weight:bold;
+}
+
+/* Contact Section */
+
+.contact-section{
+padding:80px 20px;
+text-align:center;
+}
+
+.contact-section h1{
+font-size:36px;
+margin-bottom:30px;
+color:#4CAF50;
+}
+
+.contact-box{
+max-width:600px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.contact-box p{
+font-size:18px;
+margin:15px 0;
+}
+
+/* Map */
+
+#map{
+height:400px;
+width:80%;
+margin:40px auto;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+footer{
+margin-top:40px;
+padding:20px;
+background:#333;
+color:white;
+text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+<a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
+<a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+<a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+</nav>
+
+<section class="contact-section" onmousemove="showMessage()">
+<p id="msg"></p>
+
+<h1>Contact Us</h1>
+
+<div class="contact-box">
+<p>📞 Phone: +91 98765 43210</p>
+<p>📧 Email: support@replate.com</p>
+<p>📍 Address: Pallavaram,Chennai, Tamil Nadu, India</p>
+<p>⏰ Working Hours: 9:00 AM – 9:00 PM</p>
+</div>
+
+<h2 style="margin-top:40px;color:#4CAF50;">📍 Our Location</h2>
+<p id="coords">Current Position</p>
+
+<div id="map"></div>
+
+
+</section>
+
+
+<footer>
+© 2026 RePlate | Zero Waste Food Donation Initiative
+</footer>
+
+<script>
+
+function initMap(){
+
+var location = {lat:12.9675, lng:80.1491}; // Chennai
+
+var map = new google.maps.Map(document.getElementById("map"),{
+zoom:13,
+center:location
+});
+
+var marker = new google.maps.Marker({
+position:location,
+map:map,
+title:"RePlate Food Donation Center"
+});
+
+}
+
+</script>
+
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+</script>
+
+</body>
+</html>
