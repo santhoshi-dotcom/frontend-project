@@ -36,30 +36,28 @@ Copy code
  git clone https://github.com/santhoshi-dotcom/Frontend-project.git
 2️⃣ Open the Project Folder
 Copy code
-Frontend-project
+ cd Frontend-project
 3️⃣ Run the Project
 Simply open:
 Copy code
  intro.html in your browser.
    
-## 📂 Project Structure 
+## 📂 Project Structure
 
-RePlate
-
- - intro.html
- - index.html
- - style.css
- - script.js
- - about.html
- - contact.html
- - profile.html
-Images
-   - intro.jpg
-   - home.jpg
-   - donateform.jpg
-   - alert.jpg
-   - profile.jpg│
-README.md
+ 1. intro.html
+ 2. index.html
+ 3. style.css
+ 4. script.js
+ 5. about.html
+ 6. contact.html
+ 7. profile.html
+-Images
+   1. intro.jpg
+   2. home.jpg
+   3. donateform.jpg
+   4. alert.jpg
+   5. profile.jpg│
+- README.md
 
 # 🖼 Application Flow
 
