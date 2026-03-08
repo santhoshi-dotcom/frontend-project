@@ -9,41 +9,42 @@
 "Don't waste food when someone is hungry."
 ## 📌 Project Description
    🎯 The Zero Waste Food Donation System allows users to:
-  🔹Donate surplus food.
-  🔹Raise awareness about food waste.
-  🔹Support people facing hunger.
-  🔹Encourage responsible food management.
-  🔹The website begins with an interactive intro page that shows the reality of food waste and hunger before allowing users to enter the main platform.
+  - Donate surplus food.
+  - Raise awareness about food waste.
+  - Support people facing hunger.
+  - Encourage responsible food management.
+  - The website begins with an interactive intro page that shows the reality of food waste and hunger before allowing users to enter the main platform.
 ## ✨ Features
-🔹 Intro Awareness Page – Shows message about food waste.
-🔹 Scratch-style introduction concept (interactive idea).
-🔹 Motivational quotes about food donation.
-🔹 Clean and simple homepage.
-🔹 Food donation awareness platform.
-🔹 Responsive design.
-# 🖥 Technologies Used
-🔹HTML5
-🔹CSS3
-🔹JavaScript
-🔹Responsive Web Design
-🔹LocalStorage
+ - Intro Awareness Page – Shows message about food waste.
+ - Scratch-style introduction concept (interactive idea).
+ - Motivational quotes about food donation.
+ - Clean and simple homepage.
+ - Food donation awareness platform.
+ - Responsive design.
+## 🖥 Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- Responsive Web Design
+- LocalStorage
 
-# 🚀 How to Run the Project
+## 🚀 How to Run the Project
 
 1️⃣ Download or Clone the Repository
 Copy code
 
-git clone https://github.com/santhoshi-dotcom/Frontend-project.git
+- git clone https://github.com/santhoshi-dotcom/Frontend-project.git
 2️⃣ Open the Project Folder
 Copy code
 
- Frontend-project
+ - Frontend-project
 3️⃣ Run the Project
 Simply open:
 Copy code
 
-intro.html in your browser.
-📂 Project Structure
+ - intro.html in your browser.
+   
+## 📂 Project Structure
 Copy code
 
 RePlate
@@ -77,29 +78,30 @@ RePlate
 ## 5.Data is stored in using local storage in profilepage.
 ![profilepage](profile.png)
 
-# 🌍 Purpose of the Project
+## 🌍 Purpose of the Project
 
-## 🎯The main aim of this project is to:
-🔹Reduce food waste
-🔹Help hungry people
-🔹Spread awareness about food donation
-🔹Promote social responsibility
+ 🎯The main aim of this project is to:
 
-# 📌 Future Improvements
-🔹User login system
-🔹Donor registration
-🔹Food request system
-🔹NGO / volunteer integration
-🔹Location-based food pickup
-🔹Database integration
+- Reduce food waste
+- Help hungry people
+- Spread awareness about food donation
+- Promote social responsibility
 
-# 👩‍💻 About the Project
+## 📌 Future Improvements
+- User login system
+- Donor registration-
+- Food request system
+- NGO / volunteer integration
+- Location-based food pickup
+- Database integration
+
+## 👩‍💻 About the Project
 
 Project Name: RePlate – Zero Waste Food Donation System.
 Type: Web Application.
 Purpose: Reduce food waste and support people in need.
 Publisher:Santhoshi G
 
-# ❤️ Message
+# # ❤️ Message
 
 🎯“Food is meant to be shared, not wasted.”
