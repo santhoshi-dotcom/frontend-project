@@ -59,10 +59,11 @@ RePlate Project
 
 ## How It Works
 
-1.  The user opens the website and sees an awareness message about food
+  # 1.  The user opens the website and sees an awareness message about food
     waste.
-2.  The user clicks the **Donate Food** button.
-3.  A form appears asking for food details such as:
+    ![image_alt]()
+  # 2.  The user clicks the **Donate Food** button.
+  # 3.  A form appears asking for food details such as:
     -   Donator name
     -   Phone number
     -   Address
